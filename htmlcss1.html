@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assignment-1</title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:white;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+}
+.active{
+color:#7433ff ;
+}
+.job{
+align: left;
+
+}
+.button {
+   
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  
+  border-radius: 6px;
+}
+
+.button1 {background-color: #FF5733;}
+.button2 {background-color:  #7433ff;}
+
+h1{
+font-size: 70px;
+}
+div{
+padding-top: 130px;
+
+}
+.img{
+	width:50%;
+	height:40%;
+	float:right;
+	top:10px;
+	
+	
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 6px 6px 0px 0px ;
+  padding-top:0px;;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  border-radius: 6px 6px 0px 0px ;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+  color: white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #6a5acd;
+  color:white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 22px;
+border-radius: 0px 6px 6px 6px ;
+  border-top: none;
+  background-color:#6a5acd;
+  width:95%;
+  height:80%;
+  
+}
+input[type=text],select
+{
+	padding:15px;
+	float-left:10px;
+	width:20%;
+	border-radius:4px;
+	border:solid 0.5px lightgray;
+}
+.subbutton{
+	
+	height:50px; width:20%; border:none;
+	border-radius:5px 5px 5px 5px; 		<!--top-left, top-right, bottom-right, bottom-left-->
+	padding:250px;
+	font-size:15px;
+	color:white;
+}
+
+.tablink{
+	color:black;
+}
+</style>
+</head>
+<body>
+<article>
+<p><b>Jobpply</b></p>
+<header>
+
+<ul>
+  <li><button class="button button1">Want a Job</button></li>
+  <li><button class="button button2">Post a Job</button></li>
+  <li><a >Contact</a></li>
+  <li><a href="#news">Blog</a></li>
+  <li><a href="#contact">Candidates</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a class="active" href="#home">Home</a></li>
+  
+</ul>
+</header>
+<div>
+<p style="font-size:20px"><img class="img" src="undraw_work_time_lhoj.svg">We have <span style="color:red">200,000 </span>great job offers you deserve!</p>
+<h1>Largest Job Site In <br /> The World</h1>
+</div>
+
+<div style="width: 52%">
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">Find a Job</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Find a Candidate</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <input type="text" placeholder="eg.Garphic.West">
+  <select name="Category">
+	<option value="Category" style="color:gray">Category</option>
+  </select>
+  
+  <input type="text" placeholder="Location">
+  <input type="submit" class="subbutton" style="background-color:#FF5733" color="white" value="Search">
+</div>
+
+<div id="Paris" class="tabcontent">
+   
+</div>
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</article>
+</body>
+</html>
