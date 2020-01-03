@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Assignment-3</title>
+
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+ul {
+  list-style-type: none;
+  margin-top:-220px;
+  overflow: hidden;
+  padding-right:5%;
+  font-family:calibri;
+  
+}
+
+header{
+	background-image:url(bg_1.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding:230px;
+	}
+	
+.job{
+	position:absolute;
+	top:8px;
+	left:100px;	
+}
+
+.h2{
+	font-size:50px;
+	position:absolute;
+	top:300px;
+	left:90px;
+	font-family:Flaticon;
+}
+
+.home{
+	position:absolute;
+	top:300px;
+	left:100px;	
+}
+
+.new{
+	position:absolute;
+	top:300px;
+	left:180px;
+	opacity:0.7;
+	
+	
+}
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:18px;
+}
+
+li a:hover {
+  background-color: white;
+}
+
+.button {
+   
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  
+  border-radius: 6px;
+}
+
+.button1 {background-color: #FF5733;}
+.button2 {background-color:  #7433ff;}
+
+
+.buttons{
+	border-radius:10px;
+	border:none;
+	color:white;
+	padding:5px;
+	font-size:8px;
+	font-weight:boldest;
+}
+.applyjobbutton{
+	float:right;
+	border-radius:4px;
+	border:none;
+	background-color:#5c5cd6;
+	color:white;
+	font-size:17px;
+	padding:2px;
+	height:38px;
+	width:90px;
+	font-weight:bolder;
+}
+
+.heart{
+	height:40px;
+	width:40px;
+	margin-right:10px;
+	float:right;
+}
+
+.sectionp{
+	font-size:25px;
+	font-weight:none;
+}
+
+.sectiondiv{
+	position:absolute;
+	right:200px;
+	left:200px;
+	top:420px;
+	background-color:transparent;
+	color:black;
+	padding:70px 20px 90px 20px;	<!--top right bottom left-->
+}
+hr{
+	border: solid 1px #FFE4B5;
+	
+}
+
+#id1{
+	font-size:30px;
+}
+footer{
+	max-width:100%;
+	background-color:slateblue;
+	padding:90px;
+	color:white;
+	font-size:18px;
+	margin-top:0px;
+}
+
+.subbutton{
+	
+	height:53px; width:90px; border:none;
+	border-radius:0px 5px 5px 0px; 		<!--top-left, top-right, bottom-right, bottom-left-->
+	padding:5px;
+	font-size:15px;
+	float:left;
+}
+
+.lastdiv{
+	margin-left:30%;
+	margin-right:30%;
+	width:40%;
+	margin-top:1100px;
+}
+
+.lastdiv a{
+	border-radius:50%;
+	padding:16px 20px;
+	text-decoration-line:none;
+	color:red;
+	font-size:20px;
+	background-color:white;
+}
+
+.lastdiv a:hover,a:active{
+	color:white;
+	background-color:red;
+}
+
+</style>
+</head>
+<body style="background-color:lightgray">
+<article>
+<header>
+<h3 class="job">Jobpply</h3>
+<div>
+
+<ul>
+  <li><button class="button button1">Want a Job</button></li>
+  <li><button class="button button2">Post a Job</button></li>
+  <li><a ><b>Contact</b></a></li>
+  <li><a href="#news"><b>Blog</b></a></li>
+  <li><a href="#contact"><b>Candidates</b></a></li>
+  <li><a href="#about"><b>About</b></a></li>
+  <li><a href="#home"><b>Home</b></a></li>
+  
+</ul>
+<p class="home"><strong>HOME ></strong></p>
+<p class="new"> JOB POSTS  </p>
+<h2 class="h2"><b>Apply Jobs</b></h2>
+</div>
+
+</header>
+
+<section style="padding:80px; background-color:#f2f2f2;">
+<div class="sectiondiv">
+	
+	<p style="color:gray;font-size:20px;">Recently Added Jobs</p>
+	<h2 style="font-size:40px;">Hot Jobs</h2>
+	<span class="sectionp" onclick="fun1()" style="cursor:pointer">Frontend Development </span><button class="buttons" style="background-color:slateblue;">Parttime</button><button class="applyjobbutton">Apply Job</button><img src="heart.svg" class="heart"  />
+		<p><img src="layers.png" style="width:10px; height:10px;" /><span style="color:blue; font-size:12px;"> FACEBOOK,INC. <img src="target.png" style="width:10px; height:10px;" /><span style="color:gray; font-size:12px;"> WESTERN CITY UK</span></p>
+	<hr>
+	<span class="sectionp" onclick="fun2()" style="cursor:pointer">Full Stack Developer </span><button class="buttons" style="background-color:orange;">Fulltime</button><button class="applyjobbutton">Apply Job</button><img src="heart.svg" class="heart" />
+		<p><img src="layers.png" style="width:10px; height:10px;" /><span style="color:blue; font-size:12px;"> Google,INC. <img src="target.png" style="width:10px; height:10px;" /><span style="color:gray; font-size:12px;"> WESTERN CITY UK</span></p>
+	<hr>
+	<span class="sectionp" onclick="fun3()" style="cursor:pointer">Open Source Interactive Developer </span><button class="buttons" style="background-color:#1fada6;">Freelance</button><button class="applyjobbutton">Apply Job</button><img src="heart.svg" class="heart" />
+		<p><img src="layers.png" style="width:10px; height:10px;" /><span style="color:blue; font-size:12px;"> New York Times <img src="target.png" style="width:10px; height:10px;" /><span style="color:gray; font-size:12px;"> WESTERN CITY UK</span></p>
+	<hr>
+	<span class="sectionp" onclick="fun1()" style="cursor:pointer">Frontend Development </span><button class="buttons" style="background-color:#595959;">Internship</button><button class="applyjobbutton">Apply Job</button><img src="heart.svg" class="heart" />
+		<p><img src="layers.png" style="width:10px; height:10px;" /><span style="color:blue; font-size:12px;"> FACEBOOK,INC. <img src="target.png" style="width:10px; height:10px;" /><span style="color:gray; font-size:12px;"> WESTERN CITY UK</span></p>
+	<hr>
+	<span class="sectionp" onclick="fun3()" style="cursor:pointer">Open Source Interactive Developer </span><button class="buttons" style="background-color:#cc0000;">Temporary</button><button class="applyjobbutton">Apply Job</button><img src="heart.svg" class="heart" />
+		<p><img src="layers.png" style="width:10px; height:10px;" /><span style="color:blue; font-size:12px;"> New York Times <img src="target.png" style="width:10px; height:10px;" /><span style="color:gray; font-size:12px;"> WESTERN CITY UK</span></p>
+	<hr>
+	<span class="sectionp" onclick="fun1()" style="cursor:pointer">Full Stack Developer </span><button class="buttons" style="background-color:orange;">Fulltime</button><button class="applyjobbutton">Apply Job</button><img src="heart.svg" class="heart" />
+		<p><img src="layers.png" style="width:10px; height:10px;" /><span style="color:blue; font-size:12px;"> Google,INC. <img src="target.png" style="width:10px; height:10px;" /><span style="color:gray; font-size:12px;"> WESTERN CITY UK</span></p>
+	<hr>
+	<span class="sectionp" onclick="fun3()" style="cursor:pointer">Open Source Interactive Developer </span><button class="buttons" style="background-color:#1fada6;">Freelance</button><button class="applyjobbutton">Apply Job</button><img src="heart.svg" class="heart" />
+		<p><img src="layers.png" style="width:10px; height:10px;" /><span style="color:blue; font-size:12px;"> New York Times <img src="target.png" style="width:10px; height:10px;" /><span style="color:gray; font-size:12px;"> WESTERN CITY UK</span></p>
+	<hr>
+	<span class="sectionp" onclick="fun1()" style="cursor:pointer">Frontend Development </span><button class="buttons" style="background-color:#595959;">Internship</button><button class="applyjobbutton">Apply Job</button><img src="heart.svg" class="heart" />
+		<p><img src="layers.png" style="width:10px; height:10px;" /><span style="color:blue; font-size:12px;"> FACEBOOK,INC. <img src="target.png" style="width:10px; height:10px;" /><span style="color:gray; font-size:12px;"> WESTERN CITY UK</span></p>
+	<hr>
+	<span class="sectionp" onclick="fun3()" style="cursor:pointer">Open Source Interactive Developer </span><button class="buttons" style="background-color:#cc0000;">Temporary</button><button class="applyjobbutton">Apply Job</button><img src="heart.svg" class="heart" />
+		<p><img src="layers.png" style="width:10px; height:10px;" /><span style="color:blue; font-size:12px;"> New York Times <img src="target.png" style="width:10px; height:10px;" /><span style="color:gray; font-size:12px;"> WESTERN CITY UK</span></p>
+	
+</div>
+<div style="padding-bottom:180px" class="lastdiv">
+	<a href="#">&laquo;</a>
+	<a href="xento-ass1.html">1</a>
+	<a href="xento-ass2.html">2</a>
+	<a href="xento-ass3.html">3</a>
+	<a href="#">4</a>
+	<a href="#">5</a>
+	<a href="#">&raquo</a></a>
+</div>
+
+</section>
+<div>
+<footer>
+	
+	<center>
+		<h3 id="id1">Subscribe to our Newsletter</h3>
+		<p>Far far away,behind the word mountains,far from the countries vokalia and<br>consonantia,there live the blind texts.Seperated they live in</p>
+	
+	<div>
+		<form>
+			<input style="height:43px; width:490px; border:none; border-radius:5px 0px 0px 5px; padding:5px; float:left; margin-left:300px;" type="email" placeholder="  Enter email address"><button class="subbutton" style="background-color:#FF5733">Subscribe</button>
+		</form>
+	</div>
+	</center>
+	
+</footer>
+</div>
+
+<script>
+	function fun1()
+	{
+		window.open('fd.html');
+	}
+	function fun2()
+	{
+		window.open('fs.html');
+	}
+	function fun3()
+	{
+		window.open('os.html');
+	}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
